@@ -1,0 +1,18 @@
+{
+  "name": "countdown_app",
+  "version": "1.0.0",
+  "description": "Countdown app to be used as an alarm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "css",
+    "html",
+    "npm",
+    "timer"
+  ],
+  "author": "Nikola Ekmedzic",
+  "license": "ISC"
+}
