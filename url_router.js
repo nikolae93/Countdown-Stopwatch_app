@@ -30,6 +30,11 @@ const urlRoutes = {
         template:"/templates/test2.html",
         title:"",
         description:""
+    },
+    "/one_counter.html":{
+        template:"/templates/one_counter.html",
+        title:"",
+        description:""
     }
 
 }

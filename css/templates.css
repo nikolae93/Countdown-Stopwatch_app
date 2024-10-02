@@ -1,0 +1,26 @@
+
+.one_counter_container{
+    width: 100%;
+     height: 100%; 
+     /* margin: 0px 20%;
+     padding: 30px; */
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+}
+
+.one_input{
+    appearance: none;
+    background-color: #069494;
+    color: #BF9903;
+    border: 2px solid #BF9903;
+    height: 50px;
+    width: 100px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.one_counter_container div p{
+    margin-bottom: 20px;
+}

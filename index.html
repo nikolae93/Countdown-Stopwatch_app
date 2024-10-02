@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/templates.css">
 </head>
 <body>
     <!-- <h1 class="test_css">Hello there</h1> -->
@@ -19,16 +20,18 @@
             <a href="/">Counter</a>
         </div>
         <div class="header_right">
-              <a href="test">One timer</a>
+              <a href="one_counter.html">One timer</a>
               <a href="test2">Two timers</a>
-              <a href="/fgfgfgfg">Four timers</a>
+              <a href="fgfgfgfg">Four timers</a>
               <a>Six timers</a>
               <a>Eight timers</a>
         </div>
      </header>
 
      <section>
-       <div id="content"></div>
+       <div id="content">
+           <!-- Content comes based on URL, handled by url_routes JS file -->
+       </div>
      </section>
 
      <footer>
@@ -37,5 +40,6 @@
 
     <script src="./index.js"></script>
     <script src="./url_router.js"></script>
+    <script src="./js/counter_function.js"></script>
 </body>
 </html>

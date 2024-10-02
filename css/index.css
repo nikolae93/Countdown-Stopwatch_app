@@ -61,6 +61,23 @@ section{
     height: 80vh;
     background-color: var(--main_gold);
     color: var(--dark_teil);
+    
+}
+
+#content{
+    
+    width: 100%;
+    height: 100%;
+}
+
+.btn{
+    width: 100px;
+    height: 50px;
+    background-color: var(--dark_teil);
+    border: 2px solid var(--main_teil);
+    border-radius: 10px;
+    color: var(--main_gold);
+    margin-top: 20px;
 }
 
 /* MAIN SECTION */
@@ -77,5 +94,7 @@ footer{
     justify-content: center;
     align-items: center;
 }
+
+
 
 /* FOOTER END */
