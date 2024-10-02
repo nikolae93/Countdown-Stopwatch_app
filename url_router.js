@@ -35,6 +35,11 @@ const urlRoutes = {
         template:"/templates/one_counter.html",
         title:"",
         description:""
+    },
+    "/two_counters.html":{
+        template:"/templates/two_counters.html",
+        title:"",
+        description:""
     }
 
 }
