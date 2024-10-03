@@ -36,7 +36,46 @@ document.body.addEventListener( 'click', function ( event ) {
 
     // Two counters END
 
+    // four counters
+    if( event.target.id == 'four_btn1' ) {
+        Start_timer("min_in41","sec_in41", document.getElementById("min_in41").value , document.getElementById("sec_in41").value );
+    };
+    if( event.target.id == 'four_btn_reset1' ) {
+        console.log("Clear");
 
+     clearAllIntervals();
+    };
+
+    if( event.target.id == 'four_btn2' ) {
+        Start_timer("min_in42","sec_in42", document.getElementById("min_in42").value , document.getElementById("sec_in42").value );
+    };
+    if( event.target.id == 'four_btn_reset2' ) {
+        console.log("Clear");
+
+     clearAllIntervals();
+    };
+
+    if( event.target.id == 'four_btn3' ) {
+        Start_timer("min_in42","sec_in43", document.getElementById("min_in43").value , document.getElementById("sec_in43").value );
+    };
+    if( event.target.id == 'four_btn_reset3' ) {
+        console.log("Clear");
+
+     clearAllIntervals();
+    };
+
+    if( event.target.id == 'four_btn4' ) {
+        Start_timer("min_in42","sec_in44", document.getElementById("min_in44").value , document.getElementById("sec_in44").value );
+    };
+    if( event.target.id == 'four_btn_reset4' ) {
+        console.log("Clear");
+
+     clearAllIntervals();
+    };
+
+    // four counters end
+
+    // do not cross
   } );
 
 

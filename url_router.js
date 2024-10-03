@@ -40,6 +40,11 @@ const urlRoutes = {
         template:"/templates/two_counters.html",
         title:"",
         description:""
+    },
+    "/four_counters.html":{
+        template:"/templates/four_counters.html",
+        title:"",
+        description:""
     }
 
 }
