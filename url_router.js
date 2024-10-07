@@ -13,43 +13,43 @@ document.addEventListener("click",(e)=>{
 const urlRoutes = {
     "404":{
         template:"/templates/404.html",
-        title:"",
-        description:""
+        title:"404 page not found - Countdown app",
+        description:"Page was not found"
     },
     "/":{
         template:"/templates/index.html",
-        title:"",
-        description:""
+        title:"Home - Countdown app",
+        description:"Home page"
     },
     "/test":{
         template:"/templates/test.html",
-        title:"",
-        description:""
+        title:"test",
+        description:"test"
     },
     "/test2":{
         template:"/templates/test2.html",
-        title:"",
-        description:""
+        title:"test",
+        description:"test"
     },
     "/one_counter.html":{
         template:"/templates/one_counter.html",
-        title:"",
-        description:""
+        title:"One counter - Countdown app",
+        description:"Page with one countdown"
     },
     "/two_counters.html":{
         template:"/templates/two_counters.html",
-        title:"",
-        description:""
+        title:"Two counters - Countdown app",
+        description:"Page with two countdowns"
     },
     "/four_counters.html":{
         template:"/templates/four_counters.html",
-        title:"",
-        description:""
+        title:"Four counters - Countdown app",
+        description:"Page with three countdowns"
     },
     "/stopwatch.html":{
         template:"/templates/stopwatch.html",
-        title:"",
-        description:""
+        title:"Stopwatch page - Countdown app",
+        description:"Stopwatch page"
     }
 
 }
@@ -72,6 +72,8 @@ const  urlLocationHandler= async()=>{
     const html = await fetch(route.template).then((res)=>res.text());
 
     document.getElementById("content").innerHTML=html;
+    document.title=route.title;
+    document.querySelector('meta[name="description"]').setAttribute("content",route.description);
 }
 
 window.onpopstate= urlLocationHandler;
