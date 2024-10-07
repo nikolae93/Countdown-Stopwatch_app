@@ -75,6 +75,23 @@ document.body.addEventListener( 'click', function ( event ) {
 
     // four counters end
 
+    if( event.target.id == 'one_btn_stopwatch' ) {
+        // console.log("Stopwatch works");
+        startStopwatch();
+   
+    };
+
+    if( event.target.id == 'one_btn_stopwatch_stop' ) {
+        stopStopwatch();
+   
+    };
+
+    if( event.target.id == 'one_btn_reset_stopwatch' ) {
+        resetStopwatch();
+   
+    };
+    
+
     // do not cross
   } );
 

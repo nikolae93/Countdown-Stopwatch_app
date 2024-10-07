@@ -1,4 +1,4 @@
-console.log("Router connected");
+//console.log("Router connected");
 
 document.addEventListener("click",(e)=>{
    const {target} = e;
@@ -43,6 +43,11 @@ const urlRoutes = {
     },
     "/four_counters.html":{
         template:"/templates/four_counters.html",
+        title:"",
+        description:""
+    },
+    "/stopwatch.html":{
+        template:"/templates/stopwatch.html",
         title:"",
         description:""
     }
