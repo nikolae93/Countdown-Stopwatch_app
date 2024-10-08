@@ -1,17 +1,22 @@
-// document.getElementById("one_btn").addEventListener("click",Start_timer);
 
- async function Start_timer(id_min,id_sec,m,s){
+var obj_intervals = {
+    "one_btn":0,
+    "two_btn":0,
+    "two_btn2":0,
+    "four_btn1":0,
+    "four_btn2":0,
+    "four_btn3":0,
+    "four_btn4":0,
+};
 
+ async function Start_timer(id_min,id_sec,m,s,int_id){
 
-
-  await  setInterval(()=>
+    obj_intervals[int_id] = await  setInterval(()=>
      
         {
-            m= Number(m);
-            s=Number(s);
+             m= Number(m);
+             s=Number(s);
 
-            
-       
                 if(s>0){
     
                  s--;
@@ -34,12 +39,8 @@
                 }
                 clearInterval();
                 return;
-                // console.log(m,s);
-         
-
+                
         }
-    
-    
     
     ,1000);
 
