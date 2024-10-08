@@ -55,3 +55,14 @@
 .four_gap {
     margin-right: 30px;
 }
+
+@media screen and (max-width:600px) {
+    .one_input{
+   
+        border: 1px solid #BF9903;
+        height: 30px;
+        width: 70px;
+        font-size:large;
+        text-align: center;
+    }
+}
