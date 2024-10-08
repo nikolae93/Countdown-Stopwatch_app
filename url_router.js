@@ -71,6 +71,7 @@ const  urlLocationHandler= async()=>{
     const route = urlRoutes[location] || urlRoutes["404"];
     const html = await fetch(route.template).then((res)=>res.text());
 
+    clearAllIntervals();
     document.getElementById("content").innerHTML=html;
     document.title=route.title;
     document.querySelector('meta[name="description"]').setAttribute("content",route.description);
