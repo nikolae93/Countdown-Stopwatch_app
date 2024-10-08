@@ -100,6 +100,27 @@ input[type=number] {
 
 /* MAIN SECTION */
 
+.index_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+   
+
+}
+
+.index_header{
+    font-size: 60px;
+    color: var(--dark_teil);
+    margin-top: 20px;
+}
+
+.index_txt{
+    color: var(--dark_teil);
+    margin-top: 10px;
+    font-size: 48px;
+}
+
 /* FOOTER */
 
 footer{

@@ -5,40 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <title>Countdown app</title>
-
+    <!---->
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- End of font -->
+
+    <!-- Custom made CSS files import -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/templates.css">
+    <!-- END of custom CSS -->
 </head>
 <body>
     <!-- <h1 class="test_css">Hello there</h1> -->
+     <!-- HEADER -->
      <header class="roboto-mono-bold">
+        <!--Left, logo part of the header-->
         <div class="header_left">
             <a href="/">Counter</a>
         </div>
+        <!--Left end-->
+        <!--Right part of the header, links of SPA-->
         <div class="header_right">
               <a href="one_counter.html">One timer</a>
               <a href="two_counters.html">Two timers</a>
               <a href="four_counters.html">Four timers</a>
               <a href="stopwatch.html">Stopwatch</a>
-              <!-- <a>Eight timers</a> -->
         </div>
+        <!--END of the right part of the header-->
      </header>
+     <!--END HEADER-->
 
+     <!--MAIN SECTION-->
      <section>
        <div id="content">
            <!-- Content comes based on URL, handled by url_routes JS file -->
        </div>
      </section>
+     <!--MAIN SECTION END-->
 
+     <!--FOOTER-->
      <footer>
         <p class="roboto-mono-regular">Designed and created by Nikola Ekmedžić &copy; 2024.</p>
      </footer>
+     <!--END OF FOOTER-->
 
+    <!--Main JS file -->
     <script src="./index.js"></script>
     <script src="./url_router.js"></script>
     <script src="./js/counter_function.js"></script>
