@@ -1,4 +1,5 @@
 
+// Object of all possible intervals
 var obj_intervals = {
     "one_btn":0,
     "two_btn":0,
@@ -9,6 +10,7 @@ var obj_intervals = {
     "four_btn4":0,
 };
 
+// Main timer function
  async function Start_timer(id_min,id_sec,m,s,int_id){
 
     obj_intervals[int_id] = await  setInterval(()=>

@@ -1,15 +1,16 @@
-//console.log("Router connected");
 
+// Listener for clicks in navbar
 document.addEventListener("click",(e)=>{
    const {target} = e;
    if(!target.matches("header div a")){
     return;
    }
     e.preventDefault();
-    // console.log("Kliki kliki");
+
     urlRoute();
 });
 
+// Main routes for SPA
 const urlRoutes = {
     "404":{
         template:"/templates/404.html",
@@ -20,16 +21,6 @@ const urlRoutes = {
         template:"/templates/index.html",
         title:"Home - Countdown app",
         description:"Home page"
-    },
-    "/test":{
-        template:"/templates/test.html",
-        title:"test",
-        description:"test"
-    },
-    "/test2":{
-        template:"/templates/test2.html",
-        title:"test",
-        description:"test"
     },
     "/one_counter.html":{
         template:"/templates/one_counter.html",
@@ -54,6 +45,7 @@ const urlRoutes = {
 
 }
 
+// Main logic of SPA
 function urlRoute(event){
       event = event || window.event;
       event.preventDefault();
@@ -76,6 +68,8 @@ const  urlLocationHandler= async()=>{
     document.title=route.title;
     document.querySelector('meta[name="description"]').setAttribute("content",route.description);
 }
+
+
 
 window.onpopstate= urlLocationHandler;
 window.route=urlRoute;

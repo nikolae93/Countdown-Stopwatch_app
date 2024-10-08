@@ -25,7 +25,6 @@ function BeginTImer () {
     } 
     
     if (tens > 99) {
-    //  console.log("seconds");
       sec++;
       secs.value = "0" + sec;
       tens = 0;
@@ -44,17 +43,17 @@ function BeginTImer () {
         
   }
 
-
+  // Main function starter function
   function startStopwatch(){
     Interval = setInterval(BeginTImer,10);
   }
 
-
+  // Clear single interval
   function stopStopwatch(){
     clearInterval(Interval);
   }
 
-
+  // Reset values and clear inputs
   function resetStopwatch(){
     tens=0;
     sec=0;
